@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(ls \"D:\\\\Elliot\\\\04-Dev\\\\01-文脉Narraflow\" 2>/dev/null | head -30)",
-      "Read(//d/Elliot/04-Dev/01-文脉Narraflow/**)"
+      "Read(//d/Elliot/04-Dev/01-文脉Narraflow/**)",
+      "Bash(git ls-tree *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(git add *)"
     ]
   }
 }
