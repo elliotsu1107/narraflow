@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"D:\\\\Elliot\\\\04-Dev\\\\01-文脉Narraflow\" 2>/dev/null | head -30)",
+      "Read(//d/Elliot/04-Dev/01-文脉Narraflow/**)"
+    ]
+  }
+}
