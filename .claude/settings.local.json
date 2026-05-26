@@ -3,7 +3,7 @@
     "allow": [
       "Bash(git *)",
       "Bash(python scripts/wc.py)",
-      "Bash(node -e ' *)"
+      "Bash(python -c ' *)"
     ]
   }
 }

@@ -51,7 +51,7 @@ def count_chars(text: str) -> int:
     text = re.sub(r'^\s*\d+\.\s+', '', text, flags=re.MULTILINE)
     # 移除表格
     text = re.sub(r'\|[^|]*\|', '', text)
-    text = re.sub(r'^[\s\-:||]+$', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^[\s\-:|]+$', '', text, flags=re.MULTILINE)
 
     # 中文字符
     chinese_chars = len(re.findall(r'[一-鿿㐀-䶿豈-﫿]', text))
@@ -62,6 +62,7 @@ def count_chars(text: str) -> int:
 
 
 def main():
+    sys.stdout.reconfigure(encoding='utf-8')
     if len(sys.argv) < 2:
         print("用法: python wc.py <文件路径> [--all]")
         sys.exit(1)
